@@ -21,8 +21,8 @@ ITFO-FRONT/yarn-debug.log*
 ITFO-FRONT/yarn-error.log*
 
 # 로컬히스토리 
-ITFO-FRONT/.history/*
-ITFO-FRONT/.lh/*
+**/.history/*
+**/.lh/*
 
 # Gradle
 ITFO-BACK/.gradle/

@@ -1,8 +1,15 @@
 import styled from "styled-components";
-import React from "react";
+import React, { useEffect } from "react";
+import { useTest } from "../../../common/hook/query";
 
 const Header = () => {
-  return <div style={{ backgroundColor: "yellow" }}>헤더입니다.</div>;
+  const test = useTest();
+
+  return (
+    <div style={{ backgroundColor: "yellow" }}>
+      {`헤더입니다.` + test?.data}
+    </div>
+  );
 };
 
 export default Header;
