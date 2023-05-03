@@ -1,65 +1,72 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-ITFO/ITFO-FRONT/node_modules
-ITFO/ITFO-FRONT/.pnp
-ITFO/ITFO-FRONT/.pnp.js
+ITFO-FRONT/node_modules
+ITFO-FRONT/.pnp
+ITFO-FRONT/.pnp.js
 
 # testing
-ITFO/ITFO-FRONT/coverage
+ITFO-FRONT/coverage
 
 # production
-ITFO/ITFO-FRONT/build
+ITFO-FRONT/build
 
 # misc
-ITFO/ITFO-FRONT/.DS_Store
-ITFO/ITFO-FRONT/.env.local
-ITFO/ITFO-FRONT/.env.development.local
-ITFO/ITFO-FRONT/.env.test.local
-ITFO/ITFO-FRONT/.env.production.local
+ITFO-FRONT/.DS_Store
+ITFO-FRONT/.env.local
+ITFO-FRONT/.env.development.local
+ITFO-FRONT/.env.test.local
+ITFO-FRONT/.env.production.local
 
-ITFO/ITFO-FRONT/npm-debug.log*
-ITFO/ITFO-FRONT/yarn-debug.log*
-ITFO/ITFO-FRONT/yarn-error.log*
+ITFO-FRONT/npm-debug.log*
+ITFO-FRONT/yarn-debug.log*
+ITFO-FRONT/yarn-error.log*
 
-#로컬히스토리 
-ITFO/ITFO-FRONT/.history/*
-ITFO/ITFO-FRONT/.lh/*
+# 로컬히스토리 
+ITFO-FRONT/.history/*
+ITFO-FRONT/.lh/*
 
-# Gradle #
-ITFO/ITFO-BACK/.gradle/
-ITFO/ITFO-BACK/build/
-!ITFO/ITFO-BACK/gradle/wrapper/gradle-wrapper.jar
+# Gradle
+ITFO-BACK/.gradle/
+ITFO-BACK/build/
+!ITFO-BACK/gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### STS ###
-ITFO/ITFO-BACK/.apt_generated
-ITFO/ITFO-BACK/.classpath
-ITFO/ITFO-BACK/.factorypath
-ITFO/ITFO-BACK/.project
-ITFO/ITFO-BACK/.settings
-ITFO/ITFO-BACK/.springBeans
-ITFO/ITFO-BACK/.sts4-cache
-ITFO/ITFO-BACK/bin/
+ITFO-BACK/.apt_generated
+ITFO-BACK/.classpath
+ITFO-BACK/.factorypath
+ITFO-BACK/.project
+ITFO-BACK/.settings
+ITFO-BACK/.springBeans
+ITFO-BACK/.sts4-cache
+ITFO-BACK/bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-ITFO/ITFO-BACK/.idea
-ITFO/ITFO-BACK/*.iws
-ITFO/ITFO-BACK/*.iml
-ITFO/ITFO-BACK/*.ipr
-ITFO/ITFO-BACK/out/
+ITFO-BACK/.idea
+ITFO-BACK/*.iws
+ITFO-BACK/*.iml
+ITFO-BACK/*.ipr
+ITFO-BACK/out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
 ### NetBeans ###
-ITFO/ITFO-BACK/nbproject/private/
-ITFO/ITFO-BACK/nbbuild/
-ITFO/ITFO-BACK/dist/
-ITFO/ITFO-BACK/nbdist/
-ITFO/ITFO-BACK/.nb-gradle/
+ITFO-BACK/nbproject/private/
+ITFO-BACK/nbbuild/
+ITFO-BACK/dist/
+ITFO-BACK/nbdist/
+ITFO-BACK/.nb-gradle/
 
 ### VS Code ###
-ITFO/ITFO-BACK/.vscode/
+ITFO-BACK/.vscode/
+
+# **/.classpath
+# **/.project
+# **/.settings
+# **/target
+# **/build
+# **/.gradle
+
+**/node_modules

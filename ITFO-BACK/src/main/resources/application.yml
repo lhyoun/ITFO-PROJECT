@@ -29,6 +29,6 @@ spring:
 
 ---
 
-#mybatis
-mybatis:
-  config-location: classpath:mybatis/configuration.xml
+##mybatis
+#mybatis:
+#  config-location: classpath:mybatis/configuration.xml
