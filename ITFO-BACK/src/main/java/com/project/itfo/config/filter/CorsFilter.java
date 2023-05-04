@@ -2,19 +2,21 @@ package com.project.itfo.config.filter;
 
 import java.io.IOException;
 
-import jakarta.servlet.Filter;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletResponse;
+
+
 
 public class CorsFilter implements Filter {
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("[CorsFilter.java] CORS ÇÊÅÍ ÀÛµ¿");
+		System.out.println("[CorsFilter.java] CORS ï¿½ï¿½ï¿½ï¿½ ï¿½Ûµï¿½");
 		HttpServletResponse resp = (HttpServletResponse) response;
 		resp.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
 		resp.setHeader("Access-Control-Allow-Methods", "*");
