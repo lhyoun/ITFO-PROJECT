@@ -69,4 +69,6 @@ ITFO-BACK/.vscode/
 # **/build
 # **/.gradle
 
+**/.idea
+
 **/node_modules
