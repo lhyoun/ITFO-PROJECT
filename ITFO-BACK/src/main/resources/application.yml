@@ -17,6 +17,13 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+      
+  jpa:
+    hibernate:
+      ddl-auto: validate # 
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
 
 
 ---
@@ -28,8 +35,16 @@ spring:
     activate:
       on-profile: dev
 
+
+  # datasource
+  datasource:
+      username: root
+      password: 1234
+      driver-class-name: org.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/itfo?characterEncoding=utf8
+
 ---
 
 ##mybatis
-#mybatis:
-#  config-location: classpath:mybatis/configuration.xml
+mybatis:
+  config-location: classpath:mybatis/configuration.xml
