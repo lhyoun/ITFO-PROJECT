@@ -18,6 +18,7 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
 
+
 ---
 
 # dev profile - spring boot configuration
