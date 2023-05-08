@@ -7,10 +7,13 @@ import org.springframework.stereotype.Service;
 import com.project.itfo.repository.SysCodeRepository;
 import com.project.itfo.vo.SysCode;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class SysCodeService {
 	
-	private SysCodeRepository sysCodeRepository;
+	private final SysCodeRepository sysCodeRepository;
 	
 	public SysCodeService(SysCodeRepository sysCodeRepository) {
 		this.sysCodeRepository = sysCodeRepository;

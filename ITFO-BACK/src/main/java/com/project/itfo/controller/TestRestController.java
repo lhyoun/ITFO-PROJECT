@@ -10,13 +10,14 @@ import com.project.itfo.service.SysCodeService;
 import com.project.itfo.vo.SysCode;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping("/test")
 @RequiredArgsConstructor
 public class TestRestController {
-	
-	private final SysCodeService sysCodeService;
+	@Autowired
+	private SysCodeService sysCodeService;
 	
 	@GetMapping("/test1")
 	public String testController(){

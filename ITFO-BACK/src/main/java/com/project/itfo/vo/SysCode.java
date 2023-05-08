@@ -18,7 +18,6 @@ import lombok.ToString;
 public class SysCode {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String main_cd;
 	private String sub_cd;
 	private String code_nm;

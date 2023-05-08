@@ -20,7 +20,7 @@ spring:
       
   jpa:
     hibernate:
-      ddl-auto: validate # 
+      ddl-auto: validate # validate # create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
@@ -38,10 +38,10 @@ spring:
 
   # datasource
   datasource:
-      username: root
-      password: 1234
+      username: itfo
+      password: lhyitfo
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/itfo?characterEncoding=utf8
+      url: jdbc:mysql://34.64.125.110:3306/itfo?characterEncoding=utf8
 
 ---
 
