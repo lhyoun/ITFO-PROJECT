@@ -15,10 +15,6 @@ public class SysCodeService {
 	
 	private final SysCodeRepository sysCodeRepository;
 	
-	public SysCodeService(SysCodeRepository sysCodeRepository) {
-		this.sysCodeRepository = sysCodeRepository;
-	}
-	
 	public List<SysCode> findAll(){
 		return this.sysCodeRepository.findAll();
 	}
